@@ -28,6 +28,14 @@
 		80E6E8ED2B81738F008C7CC9 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E8EC2B81738F008C7CC9 /* UIFont+Extension.swift */; };
 		80E6E8EF2B817C90008C7CC9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E8EE2B817C90008C7CC9 /* UIColor+Extension.swift */; };
 		80E6E8F12B817D76008C7CC9 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E8F02B817D76008C7CC9 /* AppColors.swift */; };
+		80E6E8F62B827801008C7CC9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E8F52B827801008C7CC9 /* Coordinator.swift */; };
+		80E6E8F82B82826B008C7CC9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E8F72B82826B008C7CC9 /* AppCoordinator.swift */; };
+		80E6E8FA2B828427008C7CC9 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E8F92B828427008C7CC9 /* OnboardingCoordinator.swift */; };
+		80E6E8FC2B828FFB008C7CC9 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E8FB2B828FFB008C7CC9 /* HomeCoordinator.swift */; };
+		80E6E8FE2B829048008C7CC9 /* OrderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E8FD2B829048008C7CC9 /* OrderCoordinator.swift */; };
+		80E6E9002B8290A0008C7CC9 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E8FF2B8290A0008C7CC9 /* ListCoordinator.swift */; };
+		80E6E9022B8290C8008C7CC9 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E9012B8290C8008C7CC9 /* ProfileCoordinator.swift */; };
+		80E6E9042B829177008C7CC9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E9032B829177008C7CC9 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +62,14 @@
 		80E6E8EC2B81738F008C7CC9 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		80E6E8EE2B817C90008C7CC9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		80E6E8F02B817D76008C7CC9 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		80E6E8F52B827801008C7CC9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		80E6E8F72B82826B008C7CC9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		80E6E8F92B828427008C7CC9 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		80E6E8FB2B828FFB008C7CC9 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		80E6E8FD2B829048008C7CC9 /* OrderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCoordinator.swift; sourceTree = "<group>"; };
+		80E6E8FF2B8290A0008C7CC9 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		80E6E9012B8290C8008C7CC9 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		80E6E9032B829177008C7CC9 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +102,7 @@
 		80E6E8B92B81654B008C7CC9 /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				80E6E8F22B827789008C7CC9 /* NavigationLayer */,
 				80E6E8CE2B8170B1008C7CC9 /* Resources */,
 				80E6E8BA2B81654B008C7CC9 /* AppDelegate.swift */,
 				80E6E8BC2B81654B008C7CC9 /* SceneDelegate.swift */,
@@ -142,6 +159,37 @@
 				80E6E8EE2B817C90008C7CC9 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		80E6E8F22B827789008C7CC9 /* NavigationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				80E6E8F42B8277CC008C7CC9 /* Coordinators */,
+				80E6E8F32B8277AB008C7CC9 /* Controllers */,
+			);
+			path = NavigationLayer;
+			sourceTree = "<group>";
+		};
+		80E6E8F32B8277AB008C7CC9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				80E6E9032B829177008C7CC9 /* TabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		80E6E8F42B8277CC008C7CC9 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				80E6E8F52B827801008C7CC9 /* Coordinator.swift */,
+				80E6E8F72B82826B008C7CC9 /* AppCoordinator.swift */,
+				80E6E8F92B828427008C7CC9 /* OnboardingCoordinator.swift */,
+				80E6E8FB2B828FFB008C7CC9 /* HomeCoordinator.swift */,
+				80E6E8FD2B829048008C7CC9 /* OrderCoordinator.swift */,
+				80E6E8FF2B8290A0008C7CC9 /* ListCoordinator.swift */,
+				80E6E9012B8290C8008C7CC9 /* ProfileCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +279,16 @@
 				80E6E8BB2B81654B008C7CC9 /* AppDelegate.swift in Sources */,
 				80E6E8ED2B81738F008C7CC9 /* UIFont+Extension.swift in Sources */,
 				80E6E8F12B817D76008C7CC9 /* AppColors.swift in Sources */,
+				80E6E8FA2B828427008C7CC9 /* OnboardingCoordinator.swift in Sources */,
+				80E6E8F82B82826B008C7CC9 /* AppCoordinator.swift in Sources */,
+				80E6E8FE2B829048008C7CC9 /* OrderCoordinator.swift in Sources */,
 				80E6E8BD2B81654B008C7CC9 /* SceneDelegate.swift in Sources */,
+				80E6E9022B8290C8008C7CC9 /* ProfileCoordinator.swift in Sources */,
+				80E6E9002B8290A0008C7CC9 /* ListCoordinator.swift in Sources */,
+				80E6E8FC2B828FFB008C7CC9 /* HomeCoordinator.swift in Sources */,
+				80E6E9042B829177008C7CC9 /* TabBarController.swift in Sources */,
 				80E6E8EF2B817C90008C7CC9 /* UIColor+Extension.swift in Sources */,
+				80E6E8F62B827801008C7CC9 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
