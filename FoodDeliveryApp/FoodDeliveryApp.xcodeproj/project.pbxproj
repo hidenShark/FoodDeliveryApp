@@ -26,6 +26,8 @@
 		80E6E8E92B817130008C7CC9 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80E6E8DC2B817130008C7CC9 /* Roboto-Thin.ttf */; };
 		80E6E8EA2B817130008C7CC9 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80E6E8DD2B817130008C7CC9 /* Roboto-Black.ttf */; };
 		80E6E8ED2B81738F008C7CC9 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E8EC2B81738F008C7CC9 /* UIFont+Extension.swift */; };
+		80E6E8EF2B817C90008C7CC9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E8EE2B817C90008C7CC9 /* UIColor+Extension.swift */; };
+		80E6E8F12B817D76008C7CC9 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E8F02B817D76008C7CC9 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		80E6E8DC2B817130008C7CC9 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		80E6E8DD2B817130008C7CC9 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		80E6E8EC2B81738F008C7CC9 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		80E6E8EE2B817C90008C7CC9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		80E6E8F02B817D76008C7CC9 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 			children = (
 				80E6E8EB2B817353008C7CC9 /* Extensions */,
 				80E6E8CF2B8170CD008C7CC9 /* Fonts */,
+				80E6E8F02B817D76008C7CC9 /* AppColors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				80E6E8EC2B81738F008C7CC9 /* UIFont+Extension.swift */,
+				80E6E8EE2B817C90008C7CC9 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -224,7 +230,9 @@
 				80E6E8BF2B81654B008C7CC9 /* ViewController.swift in Sources */,
 				80E6E8BB2B81654B008C7CC9 /* AppDelegate.swift in Sources */,
 				80E6E8ED2B81738F008C7CC9 /* UIFont+Extension.swift in Sources */,
+				80E6E8F12B817D76008C7CC9 /* AppColors.swift in Sources */,
 				80E6E8BD2B81654B008C7CC9 /* SceneDelegate.swift in Sources */,
+				80E6E8EF2B817C90008C7CC9 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
