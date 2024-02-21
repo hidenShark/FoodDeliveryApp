@@ -36,6 +36,9 @@
 		80E6E9002B8290A0008C7CC9 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E8FF2B8290A0008C7CC9 /* ListCoordinator.swift */; };
 		80E6E9022B8290C8008C7CC9 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E9012B8290C8008C7CC9 /* ProfileCoordinator.swift */; };
 		80E6E9042B829177008C7CC9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E9032B829177008C7CC9 /* TabBarController.swift */; };
+		80E6E9082B82D3F1008C7CC9 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E9072B82D3F1008C7CC9 /* OnboardingViewController.swift */; };
+		80E6E90A2B82D43B008C7CC9 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E9092B82D43B008C7CC9 /* OnboardingViewPresenter.swift */; };
+		80E6E90C2B852B13008C7CC9 /* OnboardingPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6E90B2B852B13008C7CC9 /* OnboardingPartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,9 @@
 		80E6E8FF2B8290A0008C7CC9 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		80E6E9012B8290C8008C7CC9 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		80E6E9032B829177008C7CC9 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		80E6E9072B82D3F1008C7CC9 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		80E6E9092B82D43B008C7CC9 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
+		80E6E90B2B852B13008C7CC9 /* OnboardingPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 		80E6E8B92B81654B008C7CC9 /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				80E6E9052B82D392008C7CC9 /* UILayer */,
 				80E6E8F22B827789008C7CC9 /* NavigationLayer */,
 				80E6E8CE2B8170B1008C7CC9 /* Resources */,
 				80E6E8BA2B81654B008C7CC9 /* AppDelegate.swift */,
@@ -190,6 +197,24 @@
 				80E6E9012B8290C8008C7CC9 /* ProfileCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		80E6E9052B82D392008C7CC9 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				80E6E9062B82D3C8008C7CC9 /* Onboarding */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		80E6E9062B82D3C8008C7CC9 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				80E6E9072B82D3F1008C7CC9 /* OnboardingViewController.swift */,
+				80E6E9092B82D43B008C7CC9 /* OnboardingViewPresenter.swift */,
+				80E6E90B2B852B13008C7CC9 /* OnboardingPartViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,12 +307,15 @@
 				80E6E8FA2B828427008C7CC9 /* OnboardingCoordinator.swift in Sources */,
 				80E6E8F82B82826B008C7CC9 /* AppCoordinator.swift in Sources */,
 				80E6E8FE2B829048008C7CC9 /* OrderCoordinator.swift in Sources */,
+				80E6E9082B82D3F1008C7CC9 /* OnboardingViewController.swift in Sources */,
 				80E6E8BD2B81654B008C7CC9 /* SceneDelegate.swift in Sources */,
 				80E6E9022B8290C8008C7CC9 /* ProfileCoordinator.swift in Sources */,
 				80E6E9002B8290A0008C7CC9 /* ListCoordinator.swift in Sources */,
 				80E6E8FC2B828FFB008C7CC9 /* HomeCoordinator.swift in Sources */,
 				80E6E9042B829177008C7CC9 /* TabBarController.swift in Sources */,
+				80E6E90C2B852B13008C7CC9 /* OnboardingPartViewController.swift in Sources */,
 				80E6E8EF2B817C90008C7CC9 /* UIColor+Extension.swift in Sources */,
+				80E6E90A2B82D43B008C7CC9 /* OnboardingViewPresenter.swift in Sources */,
 				80E6E8F62B827801008C7CC9 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
