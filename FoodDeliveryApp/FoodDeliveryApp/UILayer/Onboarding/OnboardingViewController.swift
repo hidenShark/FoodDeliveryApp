@@ -13,12 +13,13 @@ class OnboardingViewController: UIViewController {
     
     // MARK: - Properties
     private var pages = [OnboardingPartViewController]()
+    private var currentPageIndex = 0
     
     // MARK: - Views
     private let pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
     private let pageControl = UIPageControl()
     private let bottomButton = UIButton()
-    weak var viewOutput: OnboardingViewOutput!
+    var viewOutput: OnboardingViewOutput!
     
     init(pages: [OnboardingPartViewController] = [OnboardingPartViewController](), viewOutput: OnboardingViewOutput!) {
         super.init(nibName: nil, bundle: nil)
@@ -30,12 +31,12 @@ class OnboardingViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupLayout()
-
+        
         
     }
 }
@@ -59,6 +60,7 @@ private extension OnboardingViewController {
             bottomButton.setTitle(pages[3].buttonText, for: .normal)
         case 3:
             print("Exit")
+            viewOutput.onboardingFinish()
         default:
             break
         }
@@ -138,22 +140,24 @@ extension OnboardingViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
         guard let currentIndex = pages.firstIndex(of: viewController as! OnboardingPartViewController), currentIndex < pages.count - 1 else { return nil }
-        
         return pages[currentIndex + 1]
     }
-
 }
 
 // MARK: - UIPageViewControllerDelegate
-
 extension OnboardingViewController: UIPageViewControllerDelegate {
     func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
         if let index = pages.firstIndex(of: pendingViewControllers.first! as! OnboardingPartViewController) {
-            pageControl.currentPage = index
-            let page = pages[index]
-                let title = page.buttonText
-                bottomButton.setTitle(title, for: .normal)
-            
+            currentPageIndex = index
+        }
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if completed {
+            pageControl.currentPage = currentPageIndex
+            let page = pages[currentPageIndex]
+            let title = page.buttonText
+            bottomButton.setTitle(title, for: .normal)
         }
     }
 }
